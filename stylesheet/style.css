@@ -4,17 +4,148 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Header rules */
 
+header {
+    height: 40px;
+    width: 100%;
+    background-color: orange;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+}
+
+
+
+.header-box {
+    margin: 0 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header li {
+    padding-left: 10px;
+}
+
+header img {
+    height: 40px;
+    width: auto;
+    padding: 10px;
+
+}
+
+/* to fix*/
+.header-icons {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    padding-right: 10px;
+}
+
+header i{
+    color: white;
+}
+
+
 
 /* Container rules */
 
+main {
+    /*debug*/
+    background-color: azure;
+}
+
 .container {
     display: flex;
-    margin: 50px;
+    flex-direction: row;
+    margin: 50px 50px;
+    min-height: 400px;
 
     /*debug*/
     background-color: beige;
+}
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% /3);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.container-image {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+
+.container-label{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 100;
+    align-items: center;
+    height: 20px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.sale {
+    background-color: red;
+    width: max-content;
+    color: white;
+}
+
+.sustainability {
+    background-color: ;
+}
+
+
+
+
+.container-text {
+    height: 10%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.small{
+    font-size: 10px;
+    color: gray;
+}
+
+.large{
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.price {
+    font-size: 12px;
+    color: red;
+}
+
+.container-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
