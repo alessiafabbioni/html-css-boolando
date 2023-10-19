@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 /* Header rules */
@@ -87,14 +88,6 @@ main {
     padding-top: 30px;
 }
 
-.container-image {
-    display: flex;
-    justify-content: center;
-    height: 90%;
-    width: 100%;
-    position: relative;
-}
-
 .container-label{
     display: flex;
     flex-direction: row;
@@ -114,9 +107,15 @@ main {
     color: white;
 }
 
+
 .sustainability {
-    background-color: ;
+    background-color: green;
+    left: 50px;
+    color: white;
+    z-index: 50;
+
 }
+
 
 
 
@@ -142,6 +141,18 @@ main {
 .price {
     font-size: 12px;
     color: red;
+    font-weight: bold;
+}
+
+
+
+
+.container-image {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    position: relative;
 }
 
 .container-image img {
@@ -149,3 +160,35 @@ main {
     width: 100%;
     object-fit: cover;
 }
+
+.main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.secondary-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.container-image:hover .main-image {
+    display: none;
+}
+
+.container-image:hover .secondary-image {
+    display: inline-block;
+}
+
+
+/*footer rules
+
+footer {
+    min-height: 100px;
+    background-color: aqua;
+}
+
+*/
